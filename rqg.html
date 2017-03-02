@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <title>CodePen - Random Quote Generator - freeCodeCamp</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <!-- required to enable bootstrap and the CSS functions -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway" >
+    <!-- Raleway font, used heavily in interface -->
+    <link rel="stylesheet" href="css/rqg.css">
+    <!-- css content for styling, obvs -->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+    <!-- required for general purpose jQuery work --> 
+    <script type="text/javascript" async src="https://platform.twitter.com/widgets.js"></script>
+    <!-- link to code required to fire up a tweet once the relevant button is clicked (inline operation may be broken, however, something to do with CSP that i'll fix later)-->
+    <script type="text/javascript" src="js/rqg.js"></script>
+    <!-- all the wonderful, whizzy, self penned JS code to make this thing work -->
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row header">
+        <div class="col-sm-12">
+          <br><br><br>
+        </div>
+      </div>
+      <!-- /row -->
+      <div class="row generator">
+        <div class="col-sm-6 col-sm-offset-3 quote">
+          <h2 class="text-center" id="quote"></h2>
+          <h6 class="lead text-right" id="person"></h6>
+          <div class="row buttons">
+            <div class="col-sm-3 text-center">
+              <button id="tweet" class="btn btn-default" type="button">Tweet</button>
+            </div>
+            <!-- /col tweet button -->
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-3 reload text-center">
+              <button id="getQuote" class="btn btn-default" type="button">Reload</button>
+            </div>
+            <!-- /col reload button -->
+          </div>
+          <!-- /row buttons -->
+          <div class="row">
+            <br><!-- blank spacer to push this row down and allow breathing room at the bottom of the window -->
+          </div>
+        </div>
+        <!-- /col (quote) -->
+      </div>
+      <!-- /row generator-->
+      <div class="row footer">
+        <div class="col-sm-12">
+          <br><br><br>
+        </div>
+      </div>
+      <!-- /row -->
+    </div>
+    <!-- /container -->
+  </body>
+</html>
